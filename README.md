@@ -1,8 +1,3 @@
-# SupplySync README
-
-Replace your current `README.md` completely with this:
-
-```markdown
 # 📦 SupplySync
 
 ### AI-Powered Supply Chain Analytics & Decision-Support Platform
