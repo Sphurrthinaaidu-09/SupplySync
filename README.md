@@ -10,17 +10,19 @@ SupplySync combines **Python, Streamlit, PostgreSQL, Power Automate, automated d
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge" alt="Python">
 
-<img src="https://img.shields.io/badge/Streamlit-Framework-red?style=for-the-badge">
+<img src="https://img.shields.io/badge/Streamlit-Framework-red?style=for-the-badge" alt="Streamlit">
 
-<img src="https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge">
+<img src="https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge" alt="PostgreSQL">
 
-<img src="https://img.shields.io/badge/Gemini-AI-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/Gen%20AI-Gemini-orange?style=for-the-badge" alt="Generative AI">
 
-<img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge">
+<img src="https://img.shields.io/badge/Power%20Automate-Workflow%20Automation-5C2D91?style=for-the-badge" alt="Power Automate">
 
-<img src="https://img.shields.io/badge/Plotly-Visualization-3F4F75?style=for-the-badge">
+<img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge" alt="Pandas">
+
+<img src="https://img.shields.io/badge/Plotly-Visualization-3F4F75?style=for-the-badge" alt="Plotly">
 
 </p>
 
