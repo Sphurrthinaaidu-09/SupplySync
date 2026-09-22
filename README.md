@@ -4,7 +4,7 @@
 
 An end-to-end Supply Chain Intelligence platform designed to transform operational supply-chain data into actionable insights across inventory, suppliers, procurement, production, demand, delivery, risk, and replenishment.
 
-SupplySync combines **Python, Streamlit, PostgreSQL, automated data synchronization, analytical decision engines, and Gemini AI** to provide a centralized environment for monitoring supply-chain performance and supporting operational decisions.
+SupplySync combines **Python, Streamlit, PostgreSQL, Power Automate, automated data synchronization, analytical decision engines, and Gemini AI** to provide a centralized environment for monitoring supply-chain performance and supporting operational decisions.
 
 ---
 
@@ -153,7 +153,7 @@ This creates a more reliable analytical foundation for the dashboard and AI laye
 
 # 🔄 Automated Data Synchronization
 
-SupplySync includes an automated CSV synchronization workflow.
+SupplySync includes an automated data synchronization workflow combining Python-based monitoring with workflow automation.
 
 ```text
 CSV Dataset
@@ -564,13 +564,14 @@ The tests cover areas including:
 | Streamlit | Interactive dashboard |
 | PostgreSQL | Database & analytical data layer |
 | Gemini AI | AI-powered decision support |
+| Power Automate | Workflow automation and process orchestration |
+| Windows Task Scheduler | Automatic startup of the CSV watcher |
 | Pandas | Data processing |
 | Plotly | Data visualization |
 | psycopg2 | PostgreSQL connectivity |
 | python-dotenv | Environment configuration |
 | Git | Version control |
 | GitHub | Source control & portfolio |
-| Windows Task Scheduler | Automated watcher startup |
 
 ---
 
@@ -680,62 +681,73 @@ streamlit run app.py
 
 # 📸 Application Screenshots
 
-Screenshots of the SupplySync interface will be added here.
+## 1. Executive Dashboard
 
-Recommended sections:
+The Executive Dashboard provides a centralized overview of the current supply-chain operating position.
 
-<details>
-<summary>1. Executive Dashboard</summary>
+It presents:
 
-![Executive Dashboard](screenshots/executive-dashboard.png)
+- Total orders
+- OTIF performance
+- Products at risk
+- Critical risks
+- Overall supply-chain status
+- Priority risk queue
 
-High-level supply-chain performance and operational overview.
-
-</details>
-
----
-
-<details>
-<summary>2. Risk Center</summary>
-
-![Risk Center](screenshots/risk-center.png)
-
-Centralized supply-chain risk analysis and exposure monitoring.
-
-</details>
+The dashboard provides an executive-level view before users move into specific operational areas.
 
 ---
 
-<details>
-<summary>3. Replenishment Intelligence</summary>
+## 2. Risk Center
 
-![Replenishment Intelligence](screenshots/replenishment.png)
+The Risk Center provides centralized visibility into supply-chain risks and operational exceptions.
 
-Inventory exposure and procurement recommendation analysis.
+It allows users to analyze risks by:
 
-</details>
+- Severity
+- Risk type
+- Product
+- Supplier
 
----
-
-<details>
-<summary>4. Ask SupplySync AI</summary>
-
-![Ask SupplySync](screenshots/ask-supplysync.png)
-
-Natural-language supply-chain decision-support interface.
-
-</details>
+The Risk Center also presents detailed risk information including risk score, priority, recommended action, recommendation status, estimated cost, and supplier context.
 
 ---
 
-<details>
-<summary>5. Data Ingestion & Monitoring</summary>
+## 3. Replenishment
 
-![Data Ingestion](screenshots/data-ingestion.png)
+The Replenishment module converts inventory exposure into procurement recommendations.
 
-Dataset ingestion, validation, synchronization, and monitoring.
+It provides visibility into:
 
-</details>
+- Materials requiring replenishment
+- Recommended units
+- Estimated procurement cost
+- Critical replenishment items
+- Current stock
+- Reorder point
+- Recommended order quantity
+- Supplier information
+
+Users can also filter procurement recommendations by risk level, product/reference, and supplier.
+
+---
+
+## 4. Data Ingestion
+
+The Data Ingestion module manages the movement of operational CSV data into SupplySync.
+
+The ingestion workflow includes:
+
+```text
+Receive
+   ↓
+Validate
+   ↓
+Protect
+   ↓
+Load
+   ↓
+Audit
 
 ---
 
