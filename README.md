@@ -438,7 +438,7 @@ This makes the ingestion layer observable rather than treating database loading 
 
 The executive view brings together order performance, OTIF, risk exposure, overall supply-chain status, and the priority risk queue.
 
-![Executive Dashboard](screenshots/executive-dashboard.png)
+<img width="1600" height="900" alt="WhatsApp Image 2026-09-23 at 5 50 38 PM" src="https://github.com/user-attachments/assets/103e7a65-6dad-4556-9902-a7475c42ecde" />
 
 ---
 
@@ -446,7 +446,7 @@ The executive view brings together order performance, OTIF, risk exposure, overa
 
 The Risk Center supports filtering and investigation by severity, risk type, product, and supplier, alongside detailed risk and recommendation context.
 
-![Risk Center](screenshots/risk-center.png)
+<img width="1600" height="900" alt="WhatsApp Image 2026-09-23 at 5 50 54 PM" src="https://github.com/user-attachments/assets/be458b80-c055-4d2a-ae99-dab849fba12d" />
 
 ---
 
@@ -454,7 +454,7 @@ The Risk Center supports filtering and investigation by severity, risk type, pro
 
 The Replenishment module shows items requiring replenishment, recommended units, estimated procurement cost, stock position, reorder levels, recommended order quantities, and supplier information.
 
-![Replenishment](screenshots/replenishment.png)
+<img width="1600" height="900" alt="WhatsApp Image 2026-09-23 at 5 53 32 PM" src="https://github.com/user-attachments/assets/c923e02c-eaf6-460b-a50c-3e8c99b5ea76" />
 
 ---
 
@@ -466,7 +466,7 @@ The Data Ingestion page shows the:
 
 workflow, latest successful update, and recent synchronization history.
 
-![Data Ingestion](screenshots/data-ingestion.png)
+<img width="1600" height="900" alt="WhatsApp Image 2026-09-23 at 5 54 42 PM" src="https://github.com/user-attachments/assets/93149ac4-6666-44bf-a286-1bec85820184" />
 
 ---
 
@@ -474,7 +474,7 @@ workflow, latest successful update, and recent synchronization history.
 
 The AI interface demonstrates natural-language supply-chain analysis grounded in PostgreSQL evidence before Gemini generates the response.
 
-![Ask SupplySync AI](screenshots/ask-supplysync.png)
+<img width="1600" height="900" alt="WhatsApp Image 2026-09-23 at 5 54 20 PM" src="https://github.com/user-attachments/assets/af2e0cf0-b27d-41d7-bb6a-5762d803706c" />
 
 ---
 
