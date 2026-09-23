@@ -1,547 +1,464 @@
-# 📦 SupplySync
+📦 SupplySync
 
-### AI-Powered Supply Chain Analytics & Decision-Support Platform
-
-An end-to-end Supply Chain Intelligence platform designed to transform operational supply-chain data into actionable insights across inventory, suppliers, procurement, production, demand, delivery, risk, and replenishment.
-
-SupplySync combines **Python, Streamlit, PostgreSQL, Power Automate, automated data synchronization, analytical decision engines, and Gemini AI** to provide a centralized environment for monitoring supply-chain performance and supporting operational decisions.
+AI-Powered Supply Chain Analytics & Decision-Support Platform
 
 <p align="center">
-  <a href="https://supplysync-7bomfjjmfjzaakmedo4c86.streamlit.app">
-    🚀 <strong>Live Demo</strong>
-  </a>
+  <strong>Turn operational supply-chain data into evidence-based insights, risk visibility, replenishment intelligence, and AI-assisted decisions.</strong>
 </p>
-
----
 
 <p align="center">
-
-<img src="https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge" alt="Python">
-
-<img src="https://img.shields.io/badge/Streamlit-Framework-red?style=for-the-badge" alt="Streamlit">
-
-<img src="https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge" alt="PostgreSQL">
-
-<img src="https://img.shields.io/badge/Gen%20AI-Gemini-orange?style=for-the-badge" alt="Generative AI">
-
-<img src="https://img.shields.io/badge/Power%20Automate-Workflow%20Automation-5C2D91?style=for-the-badge" alt="Power Automate">
-
-<img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge" alt="Pandas">
-
-<img src="https://img.shields.io/badge/Plotly-Visualization-3F4F75?style=for-the-badge" alt="Plotly">
-
+  <a href="https://supplysync-7bomfjjmfjzaakmedo4c86.streamlit.app"><strong>🚀 Live Demo</strong></a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/Sphurrthinaaidu-09/SupplySync"><strong>💻 GitHub</strong></a>
 </p>
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge" alt="Python 3.13">
+  <img src="https://img.shields.io/badge/Streamlit-Framework-red?style=for-the-badge" alt="Streamlit">
+  <img src="https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Gen%20AI-Gemini-orange?style=for-the-badge" alt="Generative AI">
+  <img src="https://img.shields.io/badge/Power%20Automate-Workflow%20Automation-5C2D91?style=for-the-badge" alt="Power Automate">
+  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge" alt="Pandas">
+  <img src="https://img.shields.io/badge/Plotly-Visualization-3F4F75?style=for-the-badge" alt="Plotly">
+</p>
 
-## 🚀 Project Overview
+🎯 What is SupplySync?
 
-Modern supply chains generate large amounts of operational data across suppliers, materials, inventory, purchase orders, production, customer orders, deliveries, and quality records.
+SupplySync is an end-to-end supply-chain intelligence and decision-support platform built to bring operational data, analytical logic, automation, and generative AI into one environment.
 
-However, having data available does not automatically make it easy to understand:
+It works across suppliers, materials, products, warehouses, inventory, procurement, production, orders, deliveries, quality, demand, risks, forecasts, and replenishment.
 
-- Which risks require immediate attention?
-- Which materials require replenishment?
-- Which suppliers are creating operational exposure?
-- Where are inventory shortages developing?
-- Which products are experiencing demand pressure?
-- Where are delivery-performance issues occurring?
-- What actions should supply-chain teams consider?
+The goal is simple:
 
-**SupplySync converts these operational datasets into a centralized supply-chain intelligence platform.**
+Data → Insight → Risk → Recommendation → Decision
 
-The application combines:
+SupplySync is designed to help users understand what is happening in the supply chain, where operational exposure exists, and what actions may need consideration — without allowing the AI layer to invent unsupported business facts.
 
-- Operational data ingestion
-- PostgreSQL data management
-- Supply-chain analytics
-- Risk detection
-- Replenishment intelligence
-- Supplier analysis
-- Interactive dashboards
-- Automated CSV synchronization
-- AI-powered natural-language analysis
+💼 Business Problem
 
----
+Supply-chain teams often work across multiple operational datasets and manually maintained reports. As the number of suppliers, materials, products, warehouses, transactions, and orders grows, identifying problems and prioritizing risks becomes increasingly difficult.
 
-# 🎯 Business Problem
+Typical questions include:
 
-Supply-chain operations often depend on multiple datasets and manually maintained reports.
+Which risks require attention right now?
 
-As the number of suppliers, materials, products, warehouses, orders, and transactions increases, manually identifying operational problems becomes increasingly difficult.
+Which materials require replenishment?
 
-Common challenges include:
+Which suppliers are creating operational exposure?
 
-- Fragmented supply-chain information
-- Inventory shortages
-- Supplier performance issues
-- Delivery delays
-- Procurement exposure
-- Quality-related risks
-- Demand uncertainty
-- Difficulty prioritizing operational risks
-- Time-consuming manual analysis
+Where are inventory shortages developing?
 
-SupplySync addresses these challenges by bringing the operational data into a unified analytical environment.
+What products are experiencing demand pressure?
 
----
+Where are delivery-performance issues occurring?
 
-# 💡 Solution
+What actions should supply-chain teams consider?
 
-SupplySync provides a centralized decision-support platform where operational data can be transformed into:
+SupplySync addresses these questions by bringing the underlying operational data into a unified analytical environment.
 
-```text
-Raw Supply-Chain Data
+💡 Solution
+
+SupplySync combines five layers:
+
+Operational CSV Data
         ↓
-Data Validation
+Validation & Transformation
         ↓
 PostgreSQL Data Layer
         ↓
-Analytical Engines
+Analytical Decision Engines
         ↓
-Risk & Recommendation Intelligence
+Streamlit Dashboard + Grounded Gen AI
+
+The platform is not only a dashboard. It connects data ingestion, database management, supply-chain analytics, risk detection, replenishment intelligence, automation, and natural-language decision support.
+
+⚙️ System Architecture
+
+graph TD
+    A[Raw CSV Data] --> B[CSV Watcher]
+    B --> C[Dataset Detection]
+    C --> D[Validation & Transformation]
+    D --> E[(PostgreSQL - plastic schema)]
+    E --> F[Analytical Decision Engines]
+    F --> G[Streamlit Dashboard]
+    F --> H[Evidence Retrieval]
+    H --> I[Gemini AI]
+    I --> J[Ask SupplySync]
+
+Core workflow
+
+CSV Update
+   ↓
+Watcher detects change
+   ↓
+Dataset identification
+   ↓
+Validation & transformation
+   ↓
+Protected PostgreSQL load
+   ↓
+Ingestion log
+   ↓
+Analytics & risk intelligence
+   ↓
+Streamlit dashboard
+   ↓
+Evidence-grounded AI support
+
+🔄 Automated Data Synchronization
+
+SupplySync includes an automated synchronization workflow for structured CSV datasets.
+
+When a relevant CSV file is added or modified, the system can:
+
+Detect the file change.
+
+Identify the corresponding SupplySync dataset.
+
+Validate required and unknown columns.
+
+Apply required transformations.
+
+Protect historical records and duplicate data.
+
+Load the validated data into PostgreSQL.
+
+Record the ingestion event for monitoring.
+
+The current local automation architecture is:
+
+Windows Task Scheduler
         ↓
-Streamlit Dashboard
-        ↓
-Gemini AI Decision Support
-```
-
-The objective is not simply to display data.
-
-The objective is to help users move from:
-
-**Data → Insight → Risk → Recommendation → Decision**
-
----
-
-# ⚙️ System Workflow
-
-## Step 1: Supply-Chain Data Ingestion
-
-SupplySync works with structured operational datasets representing different areas of the supply chain.
-
-Major dataset categories include:
-
-- Suppliers
-- Materials
-- Products
-- Customers
-- Warehouses
-- Inventory
-- Purchase Orders
-- Material Receipts
-- Material Quality
-- Production
-- Orders
-- Deliveries
-- Forecasts
-- Risk Assessments
-- Decision Recommendations
-
----
-
-## Step 2: Data Validation & Transformation
-
-Before data is loaded into PostgreSQL, SupplySync performs validation and transformation.
-
-The ingestion pipeline handles:
-
-- Dataset identification
-- Required-column validation
-- Unknown-column detection
-- Duplicate detection
-- Data transformation
-- Referential integrity considerations
-- Controlled updates
-- Historical record protection
-
-This creates a more reliable analytical foundation for the dashboard and AI layer.
-
----
-
-# 🔄 Automated Data Synchronization
-
-SupplySync includes an automated data synchronization workflow combining Python-based monitoring with workflow automation.
-
-```text
-CSV Dataset
-     │
-     ▼
 CSV Watcher
-     │
-     ▼
-Dataset Detection
-     │
-     ▼
-Validation & Transformation
-     │
-     ▼
+        ↓
+Sync / Validation Engine
+        ↓
 PostgreSQL
-     │
-     ▼
-Ingestion Logging
-     │
-     ▼
-Streamlit Analytics
-```
+        ↓
+Ingestion Monitoring
 
-The system monitors the configured dataset directory for new or modified CSV files.
+Power Automate was also explored as a workflow automation and orchestration layer.
 
-When a relevant file changes:
+🗄️ Data & Database Architecture
 
-1. The watcher detects the change.
-2. The dataset is identified.
-3. The data is validated.
-4. Required transformations are applied.
-5. PostgreSQL is updated.
-6. The ingestion event is recorded.
+SupplySync uses PostgreSQL as its primary analytical data layer and organizes the application data inside the dedicated plastic schema.
 
-This allows the data layer to stay synchronized without requiring manual database uploads every time a source CSV changes.
+Area
 
----
+Main datasets
 
-# 🗄️ Database Architecture
+Dimensions
 
-SupplySync uses **PostgreSQL** as its primary data layer.
+dim_suppliers, dim_materials, dim_products, dim_customers, dim_warehouses, dim_inventory_policies, dim_date
 
-The application uses a dedicated:
+Procurement
 
-```text
-plastic
-```
+supplier_material, purchase_orders, purchase_order_lines
 
-schema.
+Inventory & Quality
 
-The database is organized into several functional areas.
+fact_inventory, fact_material_receipts, fact_material_quality
 
-### Dimension Tables
+Production
 
-```text
-dim_suppliers
-dim_materials
-dim_products
-dim_customers
-dim_warehouses
-dim_inventory_policies
-dim_date
-```
-
-### Procurement
-
-```text
-supplier_material
-purchase_orders
-purchase_order_lines
-```
-
-### Inventory & Materials
-
-```text
-fact_inventory
-fact_material_receipts
-fact_material_quality
-```
-
-### Production
-
-```text
 fact_production
-```
 
-### Orders & Delivery
+Orders & Delivery
 
-```text
-fact_orders
-fact_order_lines
-fact_deliveries
-```
+fact_orders, fact_order_lines, fact_deliveries
 
-### Intelligence
+Intelligence
 
-```text
-forecast_results
-risk_assessments
-decision_recommendations
-```
+forecast_results, risk_assessments, decision_recommendations
 
-### Monitoring
+Monitoring
 
-```text
 ingestion_log
-```
 
----
+Database relationships
 
-# 📊 Executive Dashboard
+erDiagram
+    dim_suppliers ||--o{ supplier_material : supplies
+    dim_materials ||--o{ supplier_material : categorized_by
+    dim_suppliers ||--o{ purchase_orders : places
+    purchase_orders ||--|{ purchase_order_lines : contains
+    dim_materials ||--o{ fact_inventory : monitors
+    dim_materials ||--o{ risk_assessments : evaluates
+    dim_suppliers ||--o{ risk_assessments : flags
+    risk_assessments ||--o{ decision_recommendations : generates
 
-The Executive Dashboard provides a high-level view of the current supply-chain environment.
+📊 Core Operational Modules
 
-It brings together important operational indicators and helps users quickly understand:
+1. Executive Dashboard
 
-- Overall supply-chain health
-- Order performance
-- Delivery performance
-- Critical risks
-- Inventory exposure
-- Operational recommendations
+Provides a high-level view of the supply-chain operating position, including:
 
-The dashboard is designed to provide an executive-level starting point before users move into deeper analytical modules.
+Total orders
 
----
+OTIF performance
 
-# ⚠️ Risk Center
+Products at risk
 
-The Risk Center provides centralized visibility into supply-chain risks.
+Critical risks
 
-Risk assessments include information such as:
+Overall supply-chain status
 
-- Risk type
-- Risk score
-- Risk level
-- Reference entity
-- Risk reason
-- Recommended action
-- Supplier/material context
+Priority risk queue
 
-SupplySync supports risk analysis across areas such as:
+2. Risk Center
 
-- Supplier
-- Inventory
-- Quality
-- Delivery
-- Production
+Provides centralized visibility into operational risks across:
 
-The Risk Center helps users identify which areas of the supply chain require further investigation.
+Supplier
 
----
+Inventory
 
-# 📦 Replenishment Intelligence
+Quality
 
-The Replenishment module transforms inventory exposure into procurement-oriented recommendations.
+Delivery
 
-The analytical layer considers information such as:
+Production
 
-- Current stock
-- Reorder levels
-- Inventory shortfall
-- Lead time
-- Supplier information
-- Risk information
-- Estimated procurement cost
+Risk records include risk score, risk level, risk reason, recommended action, recommendation priority, supplier/material context, estimated cost, and recommendation status.
 
-The objective is to help supply-chain teams identify materials that may require replenishment and understand the operational context behind the recommendation.
+3. Replenishment Intelligence
 
----
+Converts inventory exposure into procurement-oriented recommendations using information such as:
 
-# 🚚 Delivery & OTIF Analytics
+Current stock
 
-SupplySync includes delivery-performance analysis focused on operational fulfillment.
+Reorder levels
 
-The analytical layer supports:
+Inventory shortfall
 
-- OTIF performance
-- Delivery performance
-- Fulfillment analysis
-- Delivery-related risk identification
+Lead time
 
-This allows users to understand where delivery execution may be creating supply-chain exposure.
+Supplier information
 
----
+Risk information
 
-# 🏭 Production & Inventory Analytics
+Estimated procurement cost
 
-SupplySync provides analytical visibility across production and inventory.
+4. Delivery & OTIF Analytics
 
-Users can investigate:
+Supports analysis of:
 
-- Inventory levels
-- Inventory exposure
-- Stockout risk
-- Production activity
-- Material availability
-- Replenishment requirements
+OTIF performance
 
-These insights help connect inventory conditions with downstream operational requirements.
+Delivery performance
 
----
+Fulfillment
 
-# 👥 Supplier Intelligence
+Delivery-related exposure
 
-Supplier analysis is another core component of SupplySync.
+5. Production & Inventory Analytics
 
-The system provides analytical capabilities for:
+Connects production and inventory conditions through:
 
-- Supplier performance
-- Supplier risk
-- Supplier comparison
-- Supplier-related operational exposure
+Inventory levels
 
-This allows users to investigate supplier-related problems using the underlying operational evidence.
+Inventory exposure
 
----
+Stockout risk
 
-# 📈 Demand Analytics
+Production activity
 
-SupplySync includes product-demand analysis to identify demand-related exposure.
+Material availability
 
-The analytical layer supports:
+Replenishment requirements
 
-- Product demand analysis
-- Demand trends
-- Sales-related analysis
-- Product-level demand exposure
+6. Supplier Intelligence
 
-This provides an additional perspective when evaluating inventory and procurement requirements.
+Supports investigation of:
 
----
+Supplier performance
 
-# 💰 Cost Analysis
+Supplier risk
 
-SupplySync includes cost-oriented analytical capabilities for investigating:
+Supplier comparison
 
-- Procurement costs
-- Spending
-- Expenses
-- Price-related information
-- Cost exposure
+Supplier-related operational exposure
 
-The purpose is to connect operational supply-chain activity with its financial implications.
+7. Demand Analytics
 
----
+Provides product-level demand analysis covering:
 
-# 🤖 Ask SupplySync — AI Decision Support
+Demand volume
 
-One of the main features of SupplySync is **Ask SupplySync**, an AI-powered natural-language interface.
+Demand trends
+
+Sales-related analysis
+
+Product demand exposure
+
+8. Cost Analysis
+
+Provides analytical visibility into:
+
+Procurement costs
+
+Spending
+
+Expenses
+
+Price-related information
+
+Cost exposure
+
+🤖 Ask SupplySync — Grounded AI Decision Support
+
+One of the core features of SupplySync is Ask SupplySync, a natural-language interface for supply-chain analysis.
 
 Users can ask questions such as:
 
-```text
 Which supply-chain risks require my attention right now?
-```
 
-```text
 Which materials need replenishment?
-```
 
-```text
 Which suppliers are currently at risk?
-```
 
-```text
 What products have demand exposure?
-```
 
-Instead of allowing the AI model to independently invent answers, SupplySync first identifies the relevant analytical area and retrieves evidence from the database.
+AI architecture
 
----
+SupplySync uses a grounded retrieval pipeline rather than asking the language model to independently invent business answers.
 
-# 🧠 AI Architecture
+graph LR
+    A[User Question] --> B[Intent Detection]
+    B --> C[Analytical Tool]
+    C --> D[(PostgreSQL)]
+    D --> E[Evidence Dataset]
+    E --> F[Gemini AI]
+    F --> G[Grounded Response]
 
-The AI workflow follows a grounded analytical pipeline:
+Available analytical tools
 
-```text
-                User Question
-                      │
-                      ▼
-              Intent Detection
-                      │
-                      ▼
-             Analytical Tool
-                      │
-                      ▼
-              PostgreSQL Data
-                      │
-                      ▼
-              Evidence Dataset
-                      │
-                      ▼
-                 Gemini AI
-                      │
-                      ▼
-             Grounded Response
-```
-
-### Available analytical tools include:
-
-```text
 Supply Risks
+
 Inventory Risks
+
 Supplier Performance
+
 Product Demand
+
 OTIF Performance
+
 Cost Analysis
+
 Stockout Exposure
+
 Supplier Comparison
+
 Replenishment Recommendations
+
 Supplier Risk Summary
-```
+
+AI guardrails
 
 The AI layer is instructed to:
 
-- Use only the supplied analytical evidence
-- Avoid inventing numbers
-- Avoid inventing suppliers or products
-- Avoid inventing dates or costs
-- Explain important findings first
-- Identify insufficient evidence when necessary
-- Provide decision-support rather than claiming to execute actions
+Use only the supplied analytical evidence.
 
-This creates a separation between:
+Avoid inventing suppliers, products, numbers, dates, or costs.
 
-**Data retrieval → Analytical logic → AI explanation**
+Explain important findings first.
 
----
+Identify when available evidence is insufficient.
 
-# 📋 Decision Recommendations
+Provide decision support rather than claim to execute procurement or operational actions.
 
-SupplySync includes a decision-recommendation layer connected to the risk and analytical system.
+This creates a clear separation between:
 
-Recommendations can include actions associated with areas such as:
+Data Retrieval → Analytical Logic → AI Explanation
 
-- Replenishment
-- Supplier selection
-- Production
-- Delivery recovery
-- Operational risk
+📋 Decision Recommendations
 
-The recommendation data contains contextual information such as:
+The recommendation layer connects risk and analytical outputs to procurement and operational context.
 
-- Recommendation type
-- Risk reference
-- Priority
-- Recommended action
-- Quantity
-- Supplier
-- Estimated cost
-- Rationale
-- Recommendation status
+Recommendations may relate to:
 
----
+Replenishment
 
-# 📡 Ingestion Monitoring
+Supplier selection
 
-SupplySync maintains an ingestion log to track synchronization activity.
+Production
 
-Each ingestion event can capture:
+Delivery recovery
 
-- Dataset
-- Upload time
-- Received rows
-- Validated rows
-- Inserted rows
-- Updated rows
-- Skipped rows
-- Processing status
+Operational risk
 
-This provides visibility into the health of the data-ingestion pipeline.
+Recommendation records can include priority, recommended action, quantity, supplier, estimated cost, rationale, and recommendation status.
 
----
+📡 Ingestion Monitoring
 
-# 🧪 Testing
+SupplySync maintains an ingestion log to provide visibility into synchronization activity.
 
-The repository contains multiple test scripts covering different parts of the system.
+Tracked information includes:
 
-```text
+Dataset
+
+Upload time
+
+Received rows
+
+Validated rows
+
+Inserted rows
+
+Updated rows
+
+Skipped rows
+
+Processing status
+
+This makes the ingestion layer observable rather than treating database loading as a black box.
+
+📸 Application Screenshots
+
+1. Executive Dashboard
+
+The executive view brings together order performance, OTIF, risk exposure, overall supply-chain status, and the priority risk queue.
+
+Add screenshot: screenshots/executive-dashboard.png
+
+2. Risk Center
+
+The Risk Center supports filtering and investigation by severity, risk type, product, and supplier, alongside detailed risk and recommendation context.
+
+Add screenshot: screenshots/risk-center.png
+
+3. Replenishment
+
+The Replenishment module shows items requiring replenishment, recommended units, estimated procurement cost, stock position, reorder levels, recommended order quantities, and supplier information.
+
+Add screenshot: screenshots/replenishment.png
+
+4. Data Ingestion
+
+The Data Ingestion page shows the Receive → Validate → Protect → Load → Audit workflow, latest successful update, and recent synchronization history.
+
+Add screenshot: screenshots/data-ingestion.png
+
+5. Ask SupplySync AI
+
+The AI interface demonstrates natural-language supply-chain analysis grounded in PostgreSQL evidence before Gemini generates the response.
+
+Add screenshot: screenshots/ask-supplysync.png
+
+🧪 Testing & Validation
+
+The repository contains test scripts covering different parts of the application, including:
+
+AI functionality
+Gemini connectivity
+KPI calculations
+Critical risk analysis
+Replenishment logic
+Risk Center analysis
+Analytical tools
+
+Representative test files include:
+
 test_ai.py
 test_critical_risks.py
 test_gemini.py
@@ -550,60 +467,73 @@ test_kpis.py
 test_replenishment.py
 test_risk_center.py
 test_tools.py
-```
 
-The tests cover areas including:
+🛠️ Technology Stack
 
-- AI functionality
-- Gemini connectivity
-- KPI calculations
-- Critical risk analysis
-- Replenishment
-- Risk Center
-- Analytical tools
+Technology
 
----
+Purpose
 
-# 🛠️ Technology Stack
+Python 3.13
 
-| Technology | Purpose |
-|---|---|
-| Python | Application & analytical logic |
-| Streamlit | Interactive dashboard |
-| PostgreSQL | Database & analytical data layer |
-| Gemini AI | AI-powered decision support |
-| Power Automate | Workflow automation and process orchestration |
-| Windows Task Scheduler | Automatic startup of the CSV watcher |
-| Pandas | Data processing |
-| Plotly | Data visualization |
-| psycopg2 | PostgreSQL connectivity |
-| python-dotenv | Environment configuration |
-| Git | Version control |
-| GitHub | Source control & portfolio |
+Application and analytical logic
 
----
+Streamlit
 
-# 📁 Project Structure
+Interactive dashboard and user interface
 
-```text
+PostgreSQL
+
+Primary database and analytical data layer
+
+Gemini / Gen AI
+
+Natural-language decision support
+
+Power Automate
+
+Workflow automation and orchestration
+
+Windows Task Scheduler
+
+Automatic startup of the local CSV watcher
+
+Pandas
+
+Data processing and analysis
+
+Plotly
+
+Interactive data visualization
+
+psycopg2
+
+PostgreSQL connectivity
+
+python-dotenv
+
+Environment configuration
+
+Git
+
+Version control
+
+GitHub
+
+Source control and portfolio hosting
+
+📁 Project Structure
+
 SupplySync/
 │
 ├── app.py
-│
 ├── database.py
-│
 ├── ai_engine.py
-│
 ├── csv_watcher.py
-│
 ├── sync_csv_to_postgres.py
-│
 ├── requirements.txt
-│
 ├── .gitignore
-│
 ├── README.md
-│
 ├── LICENSE
 │
 ├── test_ai.py
@@ -614,163 +544,88 @@ SupplySync/
 ├── test_replenishment.py
 ├── test_risk_center.py
 └── test_tools.py
-```
 
----
+🎓 Skills Demonstrated
 
-# 📸 Application Screenshots
+Data Engineering
 
-## 1. Executive Dashboard
+Data ingestion pipelines
 
-The Executive Dashboard provides a centralized overview of the current supply-chain operating position.
+CSV processing
 
-It presents:
+Data validation and transformation
 
-- Total orders
-- OTIF performance
-- Products at risk
-- Critical risks
-- Overall supply-chain status
-- Priority risk queue
+PostgreSQL data modeling
 
-The dashboard provides an executive-level view before users move into specific operational areas.
+Database connectivity
 
----
+Ingestion monitoring
 
-## 2. Risk Center
+Supply Chain Analytics
 
-The Risk Center provides centralized visibility into supply-chain risks and operational exceptions.
+Inventory analysis
 
-It allows users to analyze risks by:
+Supplier analysis
 
-- Severity
-- Risk type
-- Product
-- Supplier
+Demand analysis
 
-The Risk Center also presents detailed risk information including risk score, priority, recommended action, recommendation status, estimated cost, and supplier context.
+OTIF analysis
 
----
+Cost analysis
 
-## 3. Replenishment
+Stockout exposure
 
-The Replenishment module converts inventory exposure into procurement recommendations.
+Risk analysis
 
-It provides visibility into:
+Replenishment intelligence
 
-- Materials requiring replenishment
-- Recommended units
-- Estimated procurement cost
-- Critical replenishment items
-- Current stock
-- Reorder point
-- Recommended order quantity
-- Supplier information
+AI & Decision Support
 
-Users can also filter procurement recommendations by risk level, product/reference, and supplier.
+Gemini API integration
 
----
+Natural-language interfaces
 
-## 4. Data Ingestion
+Intent detection
 
-The Data Ingestion module manages the movement of operational CSV data into SupplySync.
+Tool-based analytical retrieval
 
-The ingestion workflow includes:
+Evidence-grounded AI responses
 
-```text
-Receive
-   ↓
-Validate
-   ↓
-Protect
-   ↓
-Load
-   ↓
-Audit
-```
+AI-assisted decision support
 
----
+Application Development
 
-# 🎓 Skills Demonstrated
+Python
 
-Through this project, I developed practical experience in:
+Streamlit
 
-### Data Engineering
+Interactive dashboards
 
-- Data ingestion pipelines
-- CSV processing
-- Data validation
-- Data transformation
-- PostgreSQL data modeling
-- Database connectivity
-- Ingestion monitoring
+Data visualization
 
-### Supply Chain Analytics
+Modular application architecture
 
-- Inventory analysis
-- Supplier analysis
-- Demand analysis
-- OTIF analysis
-- Cost analysis
-- Stockout exposure
-- Risk analysis
-- Replenishment intelligence
+Automation & Version Control
 
-### AI & Decision Support
+CSV monitoring
 
-- Gemini API integration
-- Natural-language interfaces
-- Intent detection
-- Tool-based analytical retrieval
-- Evidence-grounded AI responses
-- AI-assisted decision support
+Automated database synchronization
 
-### Application Development
+Windows Task Scheduler
 
-- Python
-- Streamlit
-- Interactive dashboards
-- Data visualization
-- Modular application architecture
+Power Automate workflow automation
 
-### Automation
+Git / GitHub
 
-- CSV monitoring
-- Automated database synchronization
-- Windows Task Scheduler
-- Git/GitHub version control
+📌 Project Status
 
----
+🟢 Functional Portfolio Prototype
 
-# 🔮 Future Enhancements
+SupplySync demonstrates an end-to-end supply-chain intelligence workflow:
 
-Potential future improvements include:
-
-- 🌍 Multilingual AI interaction
-- 🧠 More advanced natural-language intent classification
-- 🔔 Automated operational alerts
-- 📊 Advanced forecasting
-- 🤝 Supplier optimization
-- 📦 Advanced inventory optimization
-- ☁️ Cloud deployment
-- 🔐 Role-based authentication
-- 📡 Real-time data integrations
-- 📈 Advanced supply-chain forecasting
-- 🧾 Automated reporting
-- 🔎 Greater AI explainability and traceability
-
----
-
-# 📌 Project Status
-
-### 🟢 Functional Portfolio Prototype
-
-SupplySync currently demonstrates an end-to-end supply-chain intelligence workflow covering:
-
-```text
 Data Ingestion
       ↓
-Validation
+Validation & Protection
       ↓
 PostgreSQL
       ↓
@@ -784,28 +639,41 @@ Recommendations
       ↓
 Streamlit Dashboard
       ↓
-Gemini AI Decision Support
-```
+Grounded Gemini AI
 
-The platform is designed as a **decision-support system**.
+The application is deployed as a live Streamlit application and is designed as a decision-support system. It presents analytical evidence and recommendations to support human decision-making rather than directly executing procurement or operational actions.
 
-It provides analytical evidence and recommendations to support human decision-making rather than directly executing procurement or operational actions.
+👉 Open SupplySync Live
 
----
+🔮 Future Enhancements
 
-# 👨‍💻 Author
+Multilingual AI interaction
 
-### Sphurrthinaaidu-09
+More advanced natural-language intent classification
 
+Automated operational alerts
+
+Advanced forecasting
+
+Supplier optimization
+
+Advanced inventory optimization
+
+Real-time data integrations
+
+Role-based authentication
+
+Automated reporting
+
+Greater AI explainability and traceability
+
+👨‍💻 Author
+
+Sphurrthinaaidu-09
 Aspiring Data / AI & Business Analytics Professional
 
-GitHub:
+GitHub: Sphurrthinaaidu-09
 
-https://github.com/Sphurrthinaaidu-09
-
----
-
-⭐ If you find this project interesting, consider giving the repository a star!
-
-```
-
+<p align="center">
+  <strong>⭐ Built as a practical portfolio project combining supply-chain analytics, data engineering, automation, and grounded generative AI.</strong>
+</p>
