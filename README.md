@@ -13,10 +13,6 @@
   <a href="https://supplysync-7bomfjjmfjzaakmedo4c86.streamlit.app">
     🚀 <strong>Live Demo</strong>
   </a>
-  &nbsp; · &nbsp;
-  <a href="https://github.com/Sphurrthinaaidu-09/SupplySync">
-    💻 <strong>GitHub</strong>
-  </a>
 </p>
 
 <p align="center">
