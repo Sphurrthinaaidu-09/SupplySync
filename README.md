@@ -6,7 +6,7 @@ An end-to-end Supply Chain Intelligence platform designed to transform operation
 
 SupplySync combines **Python, Streamlit, PostgreSQL, Power Automate, automated data synchronization, analytical decision engines, and Gemini AI** to provide a centralized environment for monitoring supply-chain performance and supporting operational decisions.
 
-[🚀 **Try the Live Demo**](https://supplysync-7bomfjjmfjzaakmedo4c86.streamlit.app)
+[🚀 **Live Demo**](https://supplysync-7bomfjjmfjzaakmedo4c86.streamlit.app)
 
 ---
 
