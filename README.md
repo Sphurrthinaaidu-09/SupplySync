@@ -6,6 +6,8 @@ An end-to-end Supply Chain Intelligence platform designed to transform operation
 
 SupplySync combines **Python, Streamlit, PostgreSQL, Power Automate, automated data synchronization, analytical decision engines, and Gemini AI** to provide a centralized environment for monitoring supply-chain performance and supporting operational decisions.
 
+[🚀 **Try the Live Demo**](https://supplysync-7bomfjjmfjzaakmedo4c86.streamlit.app)
+
 ---
 
 <p align="center">
@@ -608,75 +610,6 @@ SupplySync/
 ├── test_replenishment.py
 ├── test_risk_center.py
 └── test_tools.py
-```
-
----
-
-# 🔐 Environment Configuration
-
-SupplySync uses environment variables for sensitive configuration.
-
-A local `.env` file is used for secrets such as:
-
-```env
-GEMINI_API_KEY=your_api_key
-```
-
-Database configuration is also kept outside the public source repository.
-
-### Security
-
-Sensitive files are intentionally excluded from Git using `.gitignore`.
-
-```text
-.env
-.env.*
-__pycache__/
-*.pyc
-.venv/
-```
-
-**API keys, database passwords, and other credentials should never be committed to the repository.**
-
----
-
-# ⚙️ Installation
-
-## 1. Clone the repository
-
-```bash
-git clone https://github.com/Sphurrthinaaidu-09/SupplySync.git
-cd SupplySync
-```
-
-## 2. Create a virtual environment
-
-### Windows
-
-```powershell
-python -m venv .venv
-```
-
-Activate it:
-
-```powershell
-.venv\Scripts\activate
-```
-
-## 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-## 4. Configure environment variables
-
-Create a local `.env` file and add the required API and database configuration.
-
-## 5. Start the application
-
-```bash
-streamlit run app.py
 ```
 
 ---
