@@ -1,17 +1,26 @@
+import os
 import psycopg2
 import pandas as pd
+import streamlit as st
 
 
 # ============================================================
 # DATABASE CONNECTION
 # ============================================================
 
+def get_secret(name, default=None):
+    try:
+        return st.secrets[name]
+    except Exception:
+        return os.getenv(name, default)
+
+
 DB_CONFIG = {
-    "host": "localhost",
-    "port": "5432",
-    "database": "supplysync",
-    "user": "postgres",
-    "password": "SupplySync@2026",
+    "host": get_secret("DB_HOST", "localhost"),
+    "port": get_secret("DB_PORT", "5432"),
+    "database": get_secret("DB_NAME", "supplysync"),
+    "user": get_secret("DB_USER", "postgres"),
+    "password": get_secret("DB_PASSWORD", ""),
 }
 
 
